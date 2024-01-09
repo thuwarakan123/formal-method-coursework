@@ -1,0 +1,90 @@
+digraph state {
+ graph [fontsize=12]
+rankdir=TB;
+"1" -> "5" [label = "visitedSquares(13)", color = "firebrick"];
+"1" -> "4" [label = "visitedSquares(12)", color = "sienna"];
+"2" -> "4" [label = "visitedSquares(11)", color = "SlateBlue4"];
+"3" -> "4" [label = "visitedSquares(10)", color = "black"];
+"3" -> "5" [label = "visitedSquares(9)", color = "#efdf84"];
+"4" -> "5" [label = "visitedSquares(8)", color = "#bdef6b"];
+"5" -> "5" [label = "visitedSquares(7)", color = "#5863ee"];
+"5" -> "4" [label = "visitedSquares(6)", color = "LightSteelBlue1"];
+"5" -> "3" [label = "visitedSquares(5)", color = "gray"];
+"5" -> "2" [label = "visitedSquares(4)", color = "#efdf84"];
+"2" -> "2" [label = "visitedSquares(3)", color = "#bdef6b"];
+"1" -> "2" [label = "visitedSquares(2)", color = "#5863ee"];
+"1" -> "1" [label = "visitedSquares(1)", color = "LightSteelBlue1"];
+"1" -> "5" [label = "currentSquare", color = "gray"];
+"5" -> "ROOT-NODE" [label = "yPosition", color = "#efdf84"];
+"1" -> "ROOT-NODE" [label = "xPosition", color = "#bdef6b"];
+"1" -> "5" [label = "endPoint", color = "#5863ee"];
+"1" -> "1" [label = "startPoint", color = "LightSteelBlue1"];
+"7" -> "4" [label = "internalWalls", color = "gray"];
+"6" -> "4" [label = "internalWalls", color = "gray"];
+"6" -> "2" [label = "internalWalls", color = "gray"];
+"6" -> "1" [label = "internalWalls", color = "gray"];
+"4" -> "4" [label = "internalWalls", color = "gray"];
+"4" -> "3" [label = "internalWalls", color = "gray"];
+"4" -> "2" [label = "internalWalls", color = "gray"];
+"3" -> "3" [label = "internalWalls", color = "gray"];
+"2" -> "5" [label = "internalWalls", color = "gray"];
+"2" -> "3" [label = "internalWalls", color = "gray"];
+"2" -> "1" [label = "internalWalls", color = "gray"];
+"1" -> "3" [label = "internalWalls", color = "gray"];
+"7" -> "5" [label = "maze", color = "#efdf84"];
+"7" -> "4" [label = "maze", color = "#efdf84"];
+"7" -> "3" [label = "maze", color = "#efdf84"];
+"7" -> "2" [label = "maze", color = "#efdf84"];
+"7" -> "1" [label = "maze", color = "#efdf84"];
+"6" -> "5" [label = "maze", color = "#efdf84"];
+"6" -> "4" [label = "maze", color = "#efdf84"];
+"6" -> "3" [label = "maze", color = "#efdf84"];
+"6" -> "2" [label = "maze", color = "#efdf84"];
+"6" -> "1" [label = "maze", color = "#efdf84"];
+"5" -> "5" [label = "maze", color = "#efdf84"];
+"5" -> "4" [label = "maze", color = "#efdf84"];
+"5" -> "3" [label = "maze", color = "#efdf84"];
+"5" -> "2" [label = "maze", color = "#efdf84"];
+"5" -> "1" [label = "maze", color = "#efdf84"];
+"4" -> "5" [label = "maze", color = "#efdf84"];
+"4" -> "4" [label = "maze", color = "#efdf84"];
+"4" -> "3" [label = "maze", color = "#efdf84"];
+"4" -> "2" [label = "maze", color = "#efdf84"];
+"4" -> "1" [label = "maze", color = "#efdf84"];
+"3" -> "5" [label = "maze", color = "#efdf84"];
+"3" -> "4" [label = "maze", color = "#efdf84"];
+"3" -> "3" [label = "maze", color = "#efdf84"];
+"3" -> "2" [label = "maze", color = "#efdf84"];
+"3" -> "1" [label = "maze", color = "#efdf84"];
+"2" -> "5" [label = "maze", color = "#efdf84"];
+"2" -> "4" [label = "maze", color = "#efdf84"];
+"2" -> "3" [label = "maze", color = "#efdf84"];
+"2" -> "2" [label = "maze", color = "#efdf84"];
+"2" -> "1" [label = "maze", color = "#efdf84"];
+"1" -> "5" [label = "maze", color = "#efdf84"];
+"1" -> "4" [label = "maze", color = "#efdf84"];
+"1" -> "3" [label = "maze", color = "#efdf84"];
+"1" -> "2" [label = "maze", color = "#efdf84"];
+"1" -> "1" [label = "maze", color = "#efdf84"];
+"5" -> "ROOT-NODE" [label = "yAxisRange", color = "#bdef6b"];
+"4" -> "ROOT-NODE" [label = "yAxisRange", color = "#bdef6b"];
+"3" -> "ROOT-NODE" [label = "yAxisRange", color = "#bdef6b"];
+"2" -> "ROOT-NODE" [label = "yAxisRange", color = "#bdef6b"];
+"1" -> "ROOT-NODE" [label = "yAxisRange", color = "#bdef6b"];
+"7" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"6" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"5" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"4" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"3" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"2" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"1" -> "ROOT-NODE" [label = "xAxisRange", color = "#5863ee"];
+"1" [color = "wheat3", style = "filled, solid", shape = "box"]
+"5" [color = "wheat3", style = "filled, solid", shape = "box"]
+"4" [color = "wheat3", style = "filled, solid", shape = "box"]
+"2" [color = "wheat3", style = "filled, solid", shape = "box"]
+"3" [color = "wheat3", style = "filled, solid", shape = "box"]
+"ROOT-NODE" [color = "lightblue", style = "filled, solid", shape = "diamond"]
+"7" [color = "wheat3", style = "filled, solid", shape = "box"]
+"6" [color = "wheat3", style = "filled, solid", shape = "box"]
+subgraph "cluster_REPORT" {node [style=filled,color=white]; label="REPORT"; style=filled;color=lightgrey; }
+}
